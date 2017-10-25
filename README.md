@@ -1,1 +1,1 @@
-![finished]("./finished.png")
+![finished](finished.png)
