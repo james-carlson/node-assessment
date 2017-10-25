@@ -1,1 +1,1 @@
-!(finished.png)
+!("./finished.png")
