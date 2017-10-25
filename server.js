@@ -14,12 +14,12 @@ app.listen(port, function() {
 })
 
 app.get('/api/users', control.getAllUsers)
-// app.get('/api/users/:userId', )
-// app.get('/api/admins', )
-// app.get('/api/nonadmins', )
-// app.get('/api/user_type/:userType', )
-// app.put('/api/users/:userId', )
-// app.post('/api/users', )
-// app.delete('/api/users/:userId')
+app.get('/api/users/:userId', control.getUser)
+app.get('/api/admins', control.getAdmins)
+app.get('/api/nonadmins', control.getNonAdmins)
+app.get('/api/user_type/:userType', control.getAllUsersOfType)
+app.put('/api/users/:userId', control.updateUserInfo)
+app.post('/api/users', control.newUser)
+app.delete('/api/users/:userId', control.deleteUser)
 
 
